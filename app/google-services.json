@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524351050206",
+    "firebase_url": "https://tochka-235205.firebaseio.com",
+    "project_id": "tochka-235205",
+    "storage_bucket": "tochka-235205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524351050206:android:99dc5e90f62394030b0d4f",
+        "android_client_info": {
+          "package_name": "com.github.khodanovich.tochka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524351050206-r0lmojlqi61fn3kuvu86107n5nicd001.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.khodanovich.tochka",
+            "certificate_hash": "77256324a2a45fa58b1f9328d3f59f840421fb6d"
+          }
+        },
+        {
+          "client_id": "524351050206-lt3ar0ruitdph283q299avg7i9800g9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFDsvZgnZh-P7-9SA2fd7fBSsFaNTy-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524351050206-gq6eqna7q2rjs3oogiphqrlc496o1fuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
