@@ -1,0 +1,9 @@
+
+dependencies {
+    implementation project(":core")
+    implementation project(':core_util')
+
+    api "android.arch.navigation:navigation-fragment:$versions.navigation"
+    api "android.arch.navigation:navigation-fragment-ktx:$versions.navigation"
+    api "android.arch.navigation:navigation-ui-ktx:$versions.navigation"
+}

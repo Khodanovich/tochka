@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':navigation', ':core', ':core_util', ':core_ui', ':screen_auth', ':core_models', ':screen_profile', ':screen_search_users', ':core_api', ':screen_splash', ':ft_auth'

@@ -1,0 +1,32 @@
+
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "androidx.appcompat:appcompat:1.1.0-alpha03"
+    api "androidx.core:core-ktx:1.1.0-alpha05"
+    api "androidx.constraintlayout:constraintlayout:1.1.3"
+
+    api "com.vk:androidsdk:1.6.9"
+    api "com.facebook.android:facebook-login:4.41.0"
+    api "com.google.android.gms:play-services-auth:16.0.1"
+
+    api "androidx.paging:paging-runtime:$versions.paging"
+
+    api "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    api "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
+    api "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+
+    api "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+
+    api "org.koin:koin-android:$versions.koin"
+    api "org.koin:koin-android-viewmodel:$versions.koin"
+    api "com.squareup.picasso:picasso:$versions.picasso"
+
+    api "com.jakewharton.rxbinding2:rxbinding:$versions.rxbinding"
+
+    api "androidx.paging:paging-runtime:$versions.paging"
+
+    api "com.github.bumptech.glide:glide:$versions.glide"
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+    api "com.android.support:multidex:$versions.multidex"
+}

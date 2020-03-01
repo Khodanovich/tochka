@@ -1,0 +1,6 @@
+
+dependencies {
+    implementation project(':core')
+    implementation project(':core_util')
+    implementation project(':core_models')
+}

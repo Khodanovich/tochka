@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">tochka</string>
 
-    <string name="splash_title">Github</string>
-
-    <string name="login_vk">vk</string>
-    <string name="login_google">google</string>
-    <string name="login_facebook">facebook</string>
-
     <string name="profile_logout">logout</string>
-
     <string name="search_hint_enter_name">Enter name</string>
-    <string name="error">Ошибка</string>
-    <string name="ok">OK</string>
 </resources>

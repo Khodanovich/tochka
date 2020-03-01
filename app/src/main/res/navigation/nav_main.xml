@@ -1,76 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/nav_main"
-            app:startDestination="@id/splash">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_main"
+        app:startDestination="@id/nav_splash">
 
-    <fragment
-            android:id="@+id/splash"
-            android:name="com.github.khodanovich.tochka.features.splash.view.SplashFragment">
-        <action
-                android:id="@+id/toLogin"
-                app:destination="@+id/login"
-                app:popUpTo="@+id/splash"
-                app:popUpToInclusive="true"/>
-        <action
-                android:id="@+id/toSearchUser"
-                app:destination="@+id/searchUser"
-                app:popUpTo="@+id/splash"
-                app:popUpToInclusive="true"/>
+    <include
+            android:id="@+id/nav_splash"
+            app:graph="@navigation/nav_splash" />
 
-    </fragment>
+    <action
+            android:id="@+id/toAuth"
+            app:destination="@+id/nav_auth"
+            app:popUpTo="@+id/splash"
+            app:popUpToInclusive="true" />
+    <action
+            android:id="@+id/toSearchUser"
+            app:destination="@+id/searchUser"
+            app:popUpTo="@+id/splash"
+            app:popUpToInclusive="true" />
 
-    <fragment android:id="@+id/login"
-              android:name="com.github.khodanovich.tochka.features.login.presentation.common.LoginFragment">
-        <action
-                android:id="@+id/toVkLogin"
-                app:destination="@id/vkLogin"/>
-        <action
-                android:id="@+id/toGoogleLogin"
-                app:destination="@+id/googleLogin"/>
-        <action
-                android:id="@+id/toFacebookLogin"
-                app:destination="@+id/facebookLogin"/>
-    </fragment>
+    <include
+            android:id="@+id/nav_auth"
+            app:graph="@navigation/nav_auth" />
 
-    <fragment
-            android:id="@+id/vkLogin"
-            android:name="com.github.khodanovich.tochka.features.login.presentation.vk.VkLoginFragment">
-        <action
-                android:id="@+id/vkToSearchUser"
-                app:destination="@id/searchUser"
-                app:popUpTo="@+id/login"
-                app:popUpToInclusive="false"/>
-    </fragment>
-
-    <fragment
-            android:id="@+id/googleLogin"
-            android:name="com.github.khodanovich.tochka.features.login.presentation.google.GoogleLoginFragment">
-        <action
-                android:id="@+id/googleToSearchUser"
-                app:destination="@id/searchUser"
-                app:popUpTo="@+id/login"
-                app:popUpToInclusive="false"/>
-    </fragment>
-
-    <fragment
-            android:id="@+id/facebookLogin"
-            android:name="com.github.khodanovich.tochka.features.login.presentation.facebook.FacebookLoginFragment">
-        <action
-                android:id="@+id/facebookToSearchUser"
-                app:destination="@+id/searchUser"
-                app:popUpTo="@+id/login"
-                app:popUpToInclusive="false"/>
-    </fragment>
 
     <fragment
             android:id="@+id/searchUser"
-            android:name="com.github.khodanovich.tochka.features.search.users.presentation.SearchUsersFragment">
+            android:name="com.github.khodanovich.screen_search_users.presentation.SearchUsersFragment">
         <action
-                android:id="@+id/toLogin"
-                app:destination="@+id/login"
+                android:id="@+id/toAuth"
+                app:destination="@+id/nav_auth"
                 app:popUpTo="@+id/searchUser"
-                app:popUpToInclusive="true"/>
+                app:popUpToInclusive="true" />
     </fragment>
+
+    <action
+            android:id="@+id/toSearchUserWithPopUpToAuth"
+            app:destination="@id/searchUser"
+            app:popUpTo="@+id/nav_auth"
+            app:popUpToInclusive="false" />
+
+    <action
+            android:id="@+id/toAuthWithPopUpToSearchUsers"
+            app:destination="@+id/nav_auth"
+            app:popUpTo="@+id/searchUser"
+            app:popUpToInclusive="true" />
 
 </navigation>

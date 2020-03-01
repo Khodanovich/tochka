@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_auth"
+        app:startDestination="@id/auth">
+
+    <fragment android:id="@+id/auth"
+            android:name="com.github.khodanovich.screen_auth.presentation.common.LoginFragment">
+
+        <action
+                android:id="@+id/toVkLogin"
+                app:destination="@id/vkLogin"/>
+        <action
+                android:id="@+id/toGoogleLogin"
+                app:destination="@+id/googleLogin"/>
+        <action
+                android:id="@+id/toFacebookLogin"
+                app:destination="@+id/facebookLogin"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/vkLogin"
+            android:name="com.github.khodanovich.screen_auth.presentation.vk.VkLoginFragment">
+    </fragment>
+
+    <fragment
+            android:id="@+id/googleLogin"
+            android:name="com.github.khodanovich.screen_auth.presentation.google.GoogleLoginFragment">
+    </fragment>
+
+    <fragment
+            android:id="@+id/facebookLogin"
+            android:name="com.github.khodanovich.screen_auth.presentation.facebook.FacebookLoginFragment">
+    </fragment>
+</navigation>

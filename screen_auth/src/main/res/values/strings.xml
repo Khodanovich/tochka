@@ -1,0 +1,5 @@
+<resources>
+    <string name="login_vk">vk</string>
+    <string name="login_google">google</string>
+    <string name="login_facebook">facebook</string>
+</resources>

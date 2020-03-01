@@ -13,7 +13,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".features.container.AppContainerActivity"
+                android:name="com.github.khodanovich.tochka.container.AppActivity"
                 android:launchMode="singleInstance"
                 android:screenOrientation="portrait">
             <intent-filter>
